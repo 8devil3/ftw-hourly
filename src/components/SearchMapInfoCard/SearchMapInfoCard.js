@@ -28,6 +28,10 @@ const ListingCard = props => {
     className
   );
 
+  const startFrom = intl.formatMessage({
+    id: 'ListingCard.PriceStartFrom',
+  });
+
   return (
     <a
       alt={title}
@@ -57,7 +61,11 @@ const ListingCard = props => {
           </div>
         </div>
         <div className={classNames(css.info, { [css.borderRadiusInheritBottom]: !isInCarousel })}>
-          <div className={css.price}>{formattedPrice}</div>
+          <div className={css.price}><div className={css.startFrom}>
+            <span>{startFrom}</span>
+          </div>
+          {formattedPrice}
+          </div>
           <div className={css.name}>{title}</div>
         </div>
       </div>

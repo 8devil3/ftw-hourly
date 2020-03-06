@@ -4,6 +4,7 @@
   /* Layout */
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 5px #000;
 
   /* Remove link's hover effect */
   &:hover {
@@ -19,7 +20,7 @@
   transition: var(--transitionStyleButton);
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: var(--boxShadowListingCard);
   }
 }
@@ -45,7 +46,8 @@
   /* Layout */
   display: flex;
   flex-direction: row;
-  padding: 16px 0 2px 0;
+  /*padding: 16px 0 2px 0;*/
+  background-color: var(--dark);
 }
 
 .price {
@@ -55,6 +57,9 @@
   justify-content: flex-start;
   flex-shrink: 0;
   margin-right: 18px;
+  background-color: var(--superdark);
+  text-align: center;
+  padding: 0px 0px 16px 0px;
 }
 
 .priceValue {
@@ -89,11 +94,12 @@
 .mainInfo {
   display: flex;
   flex-direction: column;
+  margin: 8px 16px 16px 0px;
 }
 
 .title {
   /* Font */
-  @apply --marketplaceH3FontStyles;
+  @apply --marketplaceH2FontStyles;
   color: var(--matterColor);
 
   /* Remove default margins from font */
@@ -127,4 +133,24 @@
   /* use break-word if available */
   word-break: break-word;
   hyphens: auto;
+}
+
+.ReviewRating {
+  height: 12px;
+  width: 12px;
+  margin-right: 2px;
+  margin-top: 12px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.startFrom{
+  font-size: 12px;
+  font-style: normal;
+  color: var(--matterColor);
+  padding: 0px 12px 0px 12px;
+  background-color: var(--matterColorLight);
+  margin-bottom: 8px;
 }

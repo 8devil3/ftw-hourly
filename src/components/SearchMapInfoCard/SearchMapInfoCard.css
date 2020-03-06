@@ -8,7 +8,7 @@
   padding: 0;
 
   /* Borders */
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   box-shadow: var(--boxShadowPopupLight);
 
   transition: var(--transitionStyleButton);
@@ -42,7 +42,7 @@
   @apply --marketplaceH5FontStyles;
   color: var(--matterColor);
 
-  background-color: var(--matterColorLight);
+  background-color: var(--dark);
 
   /* Dimensions */
   margin-top: 0;
@@ -87,19 +87,22 @@
 
 .info {
   display: flex;
-  padding: 8px 16px;
+  padding: 0px 8px 0px 0px;
 }
 
 .price {
   flex-shrink: 0;
   font-weight: var(--fontWeightSemiBold);
   color: var(--marketplaceColor);
-
+  text-align: center;
   margin-right: 10px;
+  padding-bottom: 6px;
+  background-color: var(--superdark);
 }
 
 .name {
   flex-grow: 1;
+  margin-top: 8px;
 }
 
 .paginationInfo {
@@ -185,12 +188,12 @@
   transform: rotate(45deg);
 
   /* Caret should have same bg-color and border as label */
-  background-color: var(--matterColorLight);
+  background-color: var(--dark);
   border-right-style: solid;
-  border-right-color: var(--matterColorNegative);
+  border-right-color: var(--matterColorLight);
   border-right-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--matterColorNegative);
+  border-bottom-color: var(--matterColorLight);
   border-bottom-width: 1px;
 }
 
@@ -208,4 +211,14 @@
 .borderRadiusInheritBottom {
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
+}
+
+.startFrom{
+  font-size: 9px;
+  font-style: normal;
+  color: var(--matterColor);
+  padding: 0px 4px 0px 4px;
+  background-color: var(--matterColorLight);
+  margin-bottom: 4px;
+  line-height: 18px;
 }

@@ -8,9 +8,10 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.css';
 
-import nyImage from './images/ny-yogi.jpg';
-import laImage from './images/la-yogi.jpg';
-import sfImage from './images/sf-yogi.jpg';
+import milano from './images/milano.png';
+import roma from './images/roma.png';
+import torino from './images/torino.png';
+import firenze from './images/firenze.png';
 
 class LocationImage extends Component {
   render() {
@@ -29,12 +30,12 @@ const locationLink = (name, image, searchQuery) => {
           <LazyImage src={image} alt={name} className={css.locationImage} />
         </div>
       </div>
-      <div className={css.linkText}>
+      {/* <div className={css.linkText}>
         <FormattedMessage
           id="SectionLocations.listingsInLocation"
           values={{ location: nameText }}
         />
-      </div>
+      </div> */}
     </NamedLink>
   );
 };
@@ -51,19 +52,24 @@ const SectionLocations = props => {
       </div>
       <div className={css.locations}>
         {locationLink(
-          'New York',
-          nyImage,
-          '?address=New%20York%20City%2C%20New%20York%2C%20USA&bounds=40.917576401307%2C-73.7008392055224%2C40.477399%2C-74.2590879797556'
+          'Milano',
+          milano,
+          'address=Milano%2C provincia di Milano%2C Italia&bounds=45.535879%2C9.278131%2C45.386746%2C9.041552'
         )}
         {locationLink(
-          'Los Angeles',
-          laImage,
-          '?address=Los%20Angeles%2C%20California%2C%20USA&bounds=34.161440999758%2C-118.121305008073%2C33.9018913203336%2C-118.521456965901'
+          'Roma',
+          roma,
+          'address=Roma%2C Roma%2C Italia&bounds=42.140911%2C12.855979%2C41.65548%2C12.234478'
         )}
         {locationLink(
-          'San Francisco',
-          sfImage,
-          '?address=San%20Francisco%2C%20California%2C%20USA&bounds=37.8324430069081%2C-122.354995082683%2C37.6044780500533%2C-122.517910874663'
+          'Torino',
+          torino,
+          'address=Torino%2C provincia di Torino%2C Italia&bounds=45.140261%2C7.773509%2C45.005561%2C7.578021'
+        )}
+        {locationLink(
+          'Firenze',
+          firenze,
+          'address=Firenze%2C provincia di Firenze%2C Italia&bounds=43.83523%2C11.340048%2C43.72593%2C11.149911'
         )}
       </div>
     </div>

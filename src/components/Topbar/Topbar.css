@@ -33,7 +33,7 @@
   align-items: center;
 
   /* fill */
-  background-color: var(--matterColorLight);
+  background-color: var(--dark);
 
   /* shadows */
   box-shadow: var(--boxShadow);

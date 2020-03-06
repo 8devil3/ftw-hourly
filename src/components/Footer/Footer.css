@@ -3,12 +3,12 @@
 .root {
   position: relative;
   border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: var(--matterColorNegative);
+  border-top-width: 3px;
+  border-top-color: var(--marketplaceColor);
 
   width: 100%;
   padding: 24px 24px 42px 24px;
-  background-color: var(--matterColorBright);
+  background-color: var(--dark);
 
   @media (--viewportMedium) {
     padding: 0 24px 33px 24px;
@@ -31,8 +31,8 @@
     padding-top: 73px;
 
     border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: var(--matterColorNegative);
+    border-top-width: 3px;
+    border-top-color: var(--marketplaceColor);
   }
 }
 
@@ -121,7 +121,7 @@
   object-fit: contain;
   object-position: left center;
   width: 100%;
-  height: 27px;
+  height: 40px;
 }
 
 .organizationInfo {
@@ -295,7 +295,7 @@
   justify-content: space-between;
   align-items: flex-end;
 
-  background-color: var(--matterColorLight);
+  background-color: var(--superdark);
 
   @media (--viewportMedium) {
     display: none;

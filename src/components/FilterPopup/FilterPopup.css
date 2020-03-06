@@ -13,11 +13,11 @@
   width: auto;
   height: auto;
   min-height: 0;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
 
   &:focus {
     outline: none;
-    background-color: var(--matterColorLight);
+    background-color: var(--superdark);
     border-color: transparent;
     text-decoration: none;
     box-shadow: var(--boxShadowFilterButton);
@@ -33,7 +33,7 @@
   width: auto;
   height: auto;
   min-height: 0;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   border: 1px solid var(--marketplaceColor);
 
   &:hover,
@@ -61,12 +61,12 @@
   /* Layout */
   min-width: 300px;
   margin-top: 7px;
-  background-color: var(--matterColorLight);
+  background-color: var(--superdark);
 
   /* Borders */
-  border-top: 1px solid var(--matterColorNegative);
+  /*border-top: 1px solid var(--matterColorNegative);*/
   box-shadow: var(--boxShadowPopup);
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   transition: var(--transitionStyleButton);
 }
 

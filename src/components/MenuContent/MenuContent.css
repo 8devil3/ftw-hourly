@@ -4,10 +4,10 @@
   position: absolute;
   z-index: var(--zIndexPopup);
 
-  background-color: var(--matterColorLight);
-  border-top: 1px solid var(--matterColorNegative);
+  background-color: var(--superdark);
+  /*border-top: 1px solid var(--matterColorNegative);*/
   box-shadow: var(--boxShadowPopup);
-  border-radius: 0 0 2px 2px;
+  /*border-radius: 0 0 2px 2px;*/
   transition: var(--transitionStyleButton);
 }
 

@@ -37,12 +37,12 @@
 
   /* ================ Colors ================ */
 
-  --marketplaceColor: #0095b3;
-  --marketplaceColorLight: #00bfe6;
-  --marketplaceColorDark: #006a80;
+  --marketplaceColor: #f60;
+  --marketplaceColorLight: #f80;
+  --marketplaceColorDark: #999;
 
   /* Used with inline CSS SVGs */
-  --marketplaceColorEncoded: %230095b3;
+  --marketplaceColorEncoded: #ff6600;/*%230095b3;*/
 
   --successColor: #2ecc71;
   --successColorDark: #239954;
@@ -54,12 +54,14 @@
   --bannedColorLight: var(--marketplaceColorLight);
   --bannedColorDark: var(--marketplaceColor);
 
-  --matterColorDark: #000000;
-  --matterColor: #4a4a4a;
+  --matterColorDark: #999;
+  --matterColor: #e6e6e6;
   --matterColorAnti: #b2b2b2;
   --matterColorNegative: #e7e7e7;
-  --matterColorBright: #fcfcfc;
-  --matterColorLight: #ffffff;
+  --matterColorBright: #4d4d4d;
+  --matterColorLight: #999;
+  --dark: #333;
+  --superdark: #2a2a2a;
 
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 
@@ -96,8 +98,8 @@
 
   /* ================ Border radius ================ */
 
-  --borderRadius: 2px;
-  --borderRadiusMobileSearch: 3px;
+  --borderRadius: 0px;
+  --borderRadiusMobileSearch: 0px;
 
   /* ================ Transition styles ================ */
 
@@ -157,7 +159,7 @@
   --marketplaceButtonFontStyles: {
     font-family: 'sofiapro', Helvetica, Arial, sans-serif;
     font-weight: var(--fontWeightSemiBold);
-    font-size: 18px;
+    font-size: 24px;
     line-height: 24px;
     letter-spacing: -0.3px;
 
@@ -184,7 +186,7 @@
 
     /* Colors */
     background-color: var(--marketplaceColor);
-    color: var(--matterColorLight);
+    color: var(--matterColor);
 
     /* Text */
     text-align: center;
@@ -230,20 +232,20 @@
   --marketplaceButtonStylesSecondary {
     @apply --marketplaceButtonStyles;
 
-    background-color: var(--matterColorLight);
+    background-color: var(--marketplaceColor);
     color: var(--matterColor);
 
     /* Padding is only for <a> elements where button styles are applied,
    buttons elements should have zero padding */
     padding: 18px 0 0 0;
 
-    border-width: 1px;
+    /*border-width: 1px;
     border-style: solid;
-    border-color: var(--matterColorNegative);
+    border-color: var(--matterColorNegative);*/
 
     &:hover,
     &:focus {
-      background-color: var(--matterColorLight);
+      background-color: var(--superdark);
       border-color: var(--matterColorAnti);
     }
     &:disabled {

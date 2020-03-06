@@ -10,6 +10,7 @@ import { richText } from '../../util/richText';
 import { createSlug } from '../../util/urlHelpers';
 import config from '../../config';
 import { NamedLink, ResponsiveImage } from '../../components';
+import {ReviewRating} from '../../components';
 
 import css from './ListingCard.css';
 
@@ -66,6 +67,7 @@ export const ListingCardComponent = props => {
   const certificate = publicData
     ? getCertificateInfo(certificateConfig, publicData.certificate)
     : null;
+    
   const { formattedPrice, priceTitle } = priceData(price, intl);
 
   const unitType = config.bookingUnitType;
@@ -77,6 +79,10 @@ export const ListingCardComponent = props => {
     : isDaily
     ? 'ListingCard.perDay'
     : 'ListingCard.perUnit';
+
+const startFrom = intl.formatMessage({
+  id: 'ListingCard.PriceStartFrom',
+});
 
   return (
     <NamedLink className={classes} name="ListingPage" params={{ id, slug }}>
@@ -97,6 +103,9 @@ export const ListingCardComponent = props => {
       </div>
       <div className={css.info}>
         <div className={css.price}>
+        <div className={css.startFrom}>
+            <span>{startFrom}</span>
+          </div>
           <div className={css.priceValue} title={priceTitle}>
             {formattedPrice}
           </div>
@@ -111,10 +120,8 @@ export const ListingCardComponent = props => {
               longWordClass: css.longWord,
             })}
           </div>
-          <div className={css.certificateInfo}>
-            {certificate && !certificate.hideFromListingInfo ? (
-              <span>{certificate.label}</span>
-            ) : null}
+          <div className={css.ReviewRating}>
+            {ReviewRating}
           </div>
         </div>
       </div>

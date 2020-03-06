@@ -50,7 +50,7 @@
   padding: 0 12px 0 0;
 
   /* fill */
-  background-color: var(--matterColorLight);
+  background-color: var(--dark);
 
   /* shadows */
   box-shadow: var(--boxShadowLight);
@@ -64,11 +64,11 @@
 .logoLink {
   @apply --TopbarDesktop_linkHover;
   flex-shrink: 0;
-  padding: 21px 24px 21px 24px;
+  padding: 16px;
   height: 100%;
 
   @media (--viewportLarge) {
-    padding: 21px 36px 21px 36px;
+    padding: 16px;
   }
 }
 
@@ -89,9 +89,9 @@
   flex-grow: 1;
   height: 100%;
   margin-right: 24px;
-  border-left-style: solid;
+  /*border-left-style: solid;
   border-left-width: 1px;
-  border-left-color: var(--matterColorNegative);
+  border-left-color: var(--matterColorNegative);*/
 
   @media (--viewportLarge) {
     padding-left: 0;

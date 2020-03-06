@@ -378,6 +378,7 @@
   "ListingCard.perDay": "per day",
   "ListingCard.perNight": "per night",
   "ListingCard.perUnit": "per hour",
+  "ListingCard.PriceStartFrom": "START FROM",
   "ListingCard.unsupportedPrice": "({currency})",
   "ListingCard.unsupportedPriceTitle": "Unsupported currency ({currency})",
   "ListingPage.bookingTitle": "Book a session with {title}",
